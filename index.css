@@ -62,6 +62,7 @@ div p {
                      Actual CSS
 **********************************************************/
 
+
 body {
     margin: auto;
     width: 70vw;
@@ -88,6 +89,7 @@ body {
     font-family: 'Indie Flower', cursive;
     padding-top: 2em;
     font-size: 3em;
+    line-height: 1em;
 }
 
 #preamble {
@@ -102,18 +104,31 @@ body {
 
 #video {
     margin-block-end: 1em;
+    width: 100%
 }
 
 #video_description {
     text-align: center;
     font-size: 0.8em;
     line-height: 1.2em;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
-div > iframe {
-    min-height: 384px;
-    min-width: 216px;
+#video_container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+#video_container > iframe {
+    /* max-width: 560px;
+    max-height: 315px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin: 2px auto;
     display: block;
 }
@@ -150,4 +165,11 @@ a {
 }
 a:visited {
 	color: #F2F2F2;
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 90vw;
+        font-size: 13px;
+    }
 }
