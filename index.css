@@ -87,13 +87,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    font-family: 'Indie Flower', cursive;
 }
 
 #header > h1 {
     text-align: center;
-    font-family: 'Indie Flower', cursive;
     font-size: 3em;
     line-height: 1em;
+    margin-block-end: .5em;
+}
+
+#header > h2 {
+    line-height: 1.5em;
+    font-size: 2em;
 }
 
 #preamble {
@@ -169,6 +177,10 @@ a {
 }
 a:visited {
 	color: #F2F2F2;
+}
+
+#header-link {
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
