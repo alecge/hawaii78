@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 /*********************************************************
                   Baseline CSS
 **********************************************************/
@@ -25,7 +24,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -51,6 +50,11 @@ table {
 	border-spacing: 0;
 }
 
+div p {
+    margin-block-start: 1em;
+    margin-block-end: 1.5em;
+}
+
 
 
 
@@ -63,21 +67,18 @@ body {
     width: 70vw;
     max-width: 1000px;
     background: #060606;
-    color: #fdfdfd;
-    font-size: 1em;
-}
-
-#history {
-    line-height: 1.6em;
+    color: #F2F2F2;
     font-size: 1em;
 }
 
 #header {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
     background-image: url(header_background.jpg);
     background-size: cover; 
     height: 35vh;
     background-position: center top;  
-    width: inherit;
+    width: 100%;
 }
 
 #header > h1 {
@@ -85,4 +86,33 @@ body {
     font-family: 'Indie Flower', cursive;
     padding-top: 2em;
     font-size: 3em;
+}
+
+#preamble {
+    color: #fafafa;
+    font-size: 0.8em;
+}
+
+#history {
+    margin-top: 2em;
+    line-height: 1.7em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#history > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#attributions {
+    text-align: center;
+}
+
+a {
+	color: #F2F2F2;
+}
+a:visited {
+	color: #F2F2F2;
 }
