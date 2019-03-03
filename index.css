@@ -66,9 +66,11 @@ body {
     margin: auto;
     width: 70vw;
     max-width: 1000px;
-    background: #060606;
+    background: #080808;
     color: #F2F2F2;
     font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
 }
 
 #header {
@@ -90,21 +92,54 @@ body {
 
 #preamble {
     color: #fafafa;
-    font-size: 0.8em;
 }
 
-#history {
-    margin-top: 2em;
-    line-height: 1.7em;
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#history > h2 {
+#preamble > h2 {
     font-size: 1.5em;
     text-align: center;
     font-weight: bold;
 }
+
+#video {
+    margin-block-end: 1em;
+}
+
+#video_description {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin: 0 auto;
+}
+
+div > iframe {
+    min-height: 384px;
+    min-width: 216px;
+    margin: 2px auto;
+    display: block;
+}
+
+#history {
+    margin-top: 2em;
+    background-color: #171717;
+    border-style: solid;
+    border-color: #171717;
+    border-width: 2px;
+    border-radius: 8px;
+
+}
+
+#text_container {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#text_container > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-block-start: 1em;
+}
+
 
 #attributions {
     text-align: center;
