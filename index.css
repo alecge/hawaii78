@@ -75,19 +75,23 @@ body {
 }
 
 #header {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     background-image: url(header_background.jpg);
     background-size: cover; 
-    height: 35vh;
     background-position: center top;  
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    height: 35vh;
     width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header > h1 {
     text-align: center;
     font-family: 'Indie Flower', cursive;
-    padding-top: 2em;
     font-size: 3em;
     line-height: 1em;
 }
